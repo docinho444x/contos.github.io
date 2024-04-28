@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+:root{
+  --red: red;
+  --blue: blue;
+  --gray: gray;
+}
+body{
+  background-size : 100% 100%
+}
+#cabeçalho{
+  background: linear-gradient(gray, black);
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: auto 0%;
+  align-items: center;
+  display: block;
+}
+#fundo{
+  width: 90%;
+  height: 80%;
+  border: 2px solid black;
+  margin: 10px auto;
+  padding: 0 2%;
+  overflow-y: scroll;
+}
+#nameHistory{
+  color: white;
+  font: normal 26pt "Delicious Handrawn";
+  line-height: 65px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+#voltar{
+  font: italic 20pt "times new roman";
+  display: block;
+  text-align: right;
+  margin: 2% 0% 0% 60%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  transition: .5s;
+  text-shadow: 1px 1px 3px black;
+  max-width: 300px;
+}
+#voltar:hover{
+  color: #20a6ff;
+}
+#texto{
+  font: normal 13pt "poppins";
+  line-height: 1cm;
+  word-spacing: 5px;
+  text-shadow: 1px 1px 1px #000000;
+  color:#ffffff;
+}
+.opçoes{
+  background-color: #000000;
+  font: normal 13pt "poppins";
+  margin: 20px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: .3s;
+  display: block;
+}
+.opçoes:hover{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  text-shadow: 1px 1px 0px black;
+}
+#fim{
+  color: #ffffff;
+  text-align: right;
+  font: italic 35pt "Dancing Script";
+  text-shadow: 1px 1px 1px #000000;
+}
+.tit2{
+  color: #ffffff;
+  text-shadow: 0 0 0 #000000;
+  margin: 5px auto;
+  font: normal 20pt "poppins";
+}
+#containerPerson{
+  flex-direction: row;
+  display: flex;
+  padding: 0%;
+  margin: 0%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.persons{
+  margin: 0% auto 5px;
+  padding: 0%;
+  background: linear-gradient(white, aliceblue);
+  width: auto;
+  max-width: 350px;
+  height: auto;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.person{
+  width: 90%;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+}
+.tit3{
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font: italic 16pt "poppins";
+  margin: 0% 0% 5px;
+}
+.ficha{
+  color: #ffffff;
+  border: 2px solid rgb(255, 255, 255);
+  text-shadow: 0 0 0 rgb(0, 0, 0);
+  font: normal 12pt "times new roman";
+  margin: 1px;
+  padding: 0%;
+  padding-left: 3px;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #000000;
+  display: flex;
+}
+.tit5{
+  color: #000000;
+  text-shadow: 1px 1px 0 white;
+  font: italic 16pt "times new roman";
+  margin: 1px;
+  padding: 0%;
+  padding-left: 1px;
+  text-align: left;
+  display: flex;
+  text-decoration: underline 1px black;
+}
+.profile{
+  font: normal 20pt "abel";
+  color: #000000;
+  text-decoration: underline 1px double black;
+  text-shadow: 1px 1px 1px rgb(146, 146, 146);
+}
+.personBtn{
+  width: max-content;
+  height: min-content;
+  font: normal 14pt "abel";
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  margin: 1%;
+  padding: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+.personBtn:hover{
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
+  color: #000000;
+}
+@media screen and (max-width: 1200px){
+  #nameHistory{
+    font: normal 20pt "Delicious Handrawn";
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 800px){
+  .opçoes{
+    font: normal 12pt "poppins";
+  }
+  #fim{
+    font: italic 28pt "Dancing Script";
+  }
+  .persons{
+    max-width: 200px;
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 500px){
+  #nameHistory{
+    font: normal 10pt "Delicious Handrawn";
+    line-height: 60px;
+  }
+  #texto{
+    font: normal 10pt "poppins";
+    line-height: 0.75cm;
+  }
+  .opçoes{
+    font: normal 7pt "poppins";
+    margin: 20px 10px;
+  }
+  #fim{
+    font: italic 20pt "Dancing Script";
+  }
+  .tit2{
+    font: normal 10pt "poppins";
+  }
+  .persons{
+    min-width: 0;
+    min-height: 0;
+    width: 125px;
+    height: 275px;
+  }
+  .tit3{
+    font: italic 14pt "poppins";
+  }
+  .ficha{
+    font: normal 9pt "times new roman";
+  }
+  .tit5{
+    font: italic 10pt "times new roman";
+  }
+  .profile{
+    font: normal 14pt "abel";
+  }
+  .personBtn{
+    font: normal 12pt "abel";
+  }
+}
+@media screen and (max-height: 600px){
+  #nameHistory{
+    font: normal 12pt "Delicious Handrawn";
+    line-height: 2em;
+  }
+  #texto{
+    font: normal 8pt "poppins";
+    line-height: 0.50cm;
+  }
+  .profile{
+    font: normal 12pt "abel";
+  }
+  .personBtn{
+    font: normal 10pt "abel";
+  }
+  #fim{
+    font: italic 16pt "Dancing Script";
+  }
+  .ficha{
+    font: normal 8pt "times new roman";
+  }
+  .persons{
+    width: 125px;
+    min-width: 0;
+    min-height: 0;
+    height: 105px;
+  }
+}
+/*css : 1278*/
